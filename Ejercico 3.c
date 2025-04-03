@@ -1,6 +1,5 @@
-1 for
-  6 while
-  10 do while
+//Luis Crown
+//Ejercicio 3 Práctica 7
 #include <stdio.h>
 
 int main() {
@@ -8,7 +7,7 @@ int main() {
     int contador = 0;
     int suma = 0;
 
-    printf("Introduce un número (0 para finalizar): ");
+    printf("Introduce un número, (con 0 puede finalizar): ");
     scanf("%d", &numero);
 
     while (numero != 0) {
@@ -16,7 +15,7 @@ int main() {
         contador++;
         suma += numero;
 
-        printf("Introduce un número (0 para finalizar): ");
+        printf("Introduce un número (con 0 puede finalizar): ");
         scanf("%d", &numero);
     }
 
@@ -24,14 +23,5 @@ int main() {
     printf("Cantidad de números introducidos: %d\n", contador);
     printf("Suma total de los números introducidos: %d\n", suma);
 
-    return 0;
-}
-
-#include <stdio.h>
-
-int main() {
-    for (int i = 1; i <= 100; i++) {
-        printf("%d\n", i);
-    }
     return 0;
 }
