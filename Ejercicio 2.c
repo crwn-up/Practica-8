@@ -1,1 +1,26 @@
-Escribir un programa en C que solicite n+umeros al usuario hasta que se hayan introducido 10 números o que la suma de todos los números leídos sea mayor a 100. Por último mostrar un mensaje indicando que condición se ha cumplido
+//Luis Crown
+//Ejercicio 2 Práctica 7
+#include <stdio.h>
+
+int main() {
+    int suma = 0;
+    int contador = 0;
+    int numero;
+
+    do {
+        printf("Ingrese un número: ");
+        scanf("%d", &numero);
+
+        suma += numero;
+        contador++;
+
+    } while (contador < 10 && suma <= 100);
+
+    if (contador == 10) {
+        printf("Se han introducido 10 números.\n");
+    } else if (suma > 100) {
+        printf("La suma de los números introducidos es mayor a 100.\n");
+    }
+
+    return 0;
+}
