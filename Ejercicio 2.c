@@ -1,0 +1,1 @@
+Escribir un programa en C que solicite n+umeros al usuario hasta que se hayan introducido 10 números o que la suma de todos los números leídos sea mayor a 100. Por último mostrar un mensaje indicando que condición se ha cumplido
