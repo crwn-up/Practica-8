@@ -41,30 +41,3 @@ int main() {
 
     return 0;
 }
-
-#include <stdio.h>
-
-int main() {
-    int suma = 0;
-    int contador = 0;
-    int numero;
-
-    // Bucle que se ejecuta al menos una vez y continúa mientras no se cumplan las condiciones de parada
-    do {
-        printf("Ingrese un número: ");
-        scanf("%d", &numero);
-
-        suma += numero;
-        contador++;
-
-    } while (contador < 10 && suma <= 100);
-
-    // Verificar cuál condición se ha cumplido para salir del bucle
-    if (contador == 10) {
-        printf("Se han introducido 10 números.\n");
-    } else if (suma > 100) {
-        printf("La suma de los números introducidos es mayor a 100.\n");
-    }
-
-    return 0;
-}
